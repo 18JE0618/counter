@@ -1,38 +1,89 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+    font-size: 21px;
+    border-color: #B24242;
+    padding: 0;
+    height: 56px;
+    width: 60px;
+    font-weight: bold;
+}
+.btn1{
+  background-color: #FFFFFF;
+  color: #B24242;
+  border-radius: 8px 0px 0px 8px;
+  border-right: 0px;
+  margin-top: 0;
+}
+.btn2{
+  background-color: #FBE8E8;
+  color: #B24242;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 22px;
+  width: 50px;
+  border: none;
+  font-size: 21px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.btn3{
+  background-color: #B24242;
+  color: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
+  border-left: 0px;
+  margin-top: 0;
+}
+.countervalue{
+  margin-left: -80px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.loader {
+  display: inline-block;
+  margin-bottom: -2px;
+  margin-left: -40px;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #B24242;
+  border-bottom: 3px solid #B24242;
+  width: 10px;
+  height: 10px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.saving{
+   display: inline-block;
+   margin-bottom: 5px;
+   margin-left: 10px;
+   font-size: 12px;
+   font-weight: bold;
+}
+.loaderSaver{
+  text-align: center;
+  margin: auto;
+  height: 20px;
+  width: 180px;
 }
